@@ -9,6 +9,7 @@
   },
   "scripts": {
     "start": "babel script.js --watch --out-file script-compiled.js",
+    "starth": "http-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
