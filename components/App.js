@@ -1,3 +1,5 @@
+const GIPHY_API_URL="https://developers.giphy.com";
+const GIPHY_PUB_KEY= "6NzIKusO6AXqkScoaYxWf2XG5DzndCWv";
 App = React.createClass({
     render: function() {
 var styles = {
@@ -37,7 +39,7 @@ return (
         }.bind(this));
       },
       getGif: function(searchingText, callback) { 
-        var url = GIPHY_API_URL + '/v1/gifs/random?api_key=' + GIPHY_PUB_KEY + '&tag=' + searchingText;  // 2.
+        var url = GIPHY_API_URL + '/v1/gifs/random?api_key=' + GIPHY_PUB_KEY + '&tag=' + searchingText;  
         var xhr = new XMLHttpRequest();  
         xhr.open('GET', url);
         xhr.onload = function() {

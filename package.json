@@ -5,11 +5,14 @@
   "main": "script.js",
   "dependencies": {},
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "browser-sync": "^2.24.4",
     "http-server": "^0.11.1"
   },
   "scripts": {
     "start": "babel script.js --watch --out-file script-compiled.js",
-    "starth": "http-server",
+    "starth": "http-server -c-1",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
