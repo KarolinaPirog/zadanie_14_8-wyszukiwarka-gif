@@ -17,6 +17,11 @@ Gif = React.createClass({
                 <img id='gif' src={url} style={{width: '100%', maxWidth: '350px'}}/>
               </a>
             </div>
+          if(url == null) {
+            reject(new Error);
+          } else {
+            resolve(response)
+          }
           );
         }
       )
