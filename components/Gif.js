@@ -3,9 +3,9 @@ var styles = {
   minHeight: '310px',
   margin: '0.5em'
 };
+
+
 Gif = React.createClass({
-  return new Promise(
-    function (resolve, reject) {
           getUrl: function() {
           return this.props.sourceUrl || GIPHY_LOADING_URL;
           },
@@ -17,14 +17,6 @@ Gif = React.createClass({
                 <img id='gif' src={url} style={{width: '100%', maxWidth: '350px'}}/>
               </a>
             </div>
-          if(url == null) {
-            reject(new Error);
-          } else {
-            resolve(response)
-          }
           );
         }
-      )
-    }
-  )
 });
